@@ -6,6 +6,7 @@ This is a sample rails 6 application that provide Authentication, Roles and Auto
 . Rolify for roles <br/> 
 . Pundit for authosisation <br/> 
 
+[DEMO](https://users-posts.herokuapp.com/)
 
  **Database**: PostgreSQL <br/>  
  **Front-end Framework**: Bootstrap <br/>  
@@ -36,9 +37,9 @@ This is a sample rails 6 application that provide Authentication, Roles and Auto
   Create a local o e remote postgresql server <br/>
   
  **Clone** <br/>
-`$ git clone https://github.com/wilfriedndomokenfack/users-posts-rails-6.git<br/>`
-`$ cd users-posts-rails-6/<br/>`
-`$ bundle install<br/>`
+`$ git clone https://github.com/wilfriedndomokenfack/users-posts-rails-6.git`<br/>
+`$ cd users-posts-rails-6/`<br/>
+`$ bundle install`<br/>
 
 edit the file app/config/database.yml<br/>
 <pre>
@@ -51,7 +52,7 @@ development:  <br/>
   port: 5432 <br/>
 </pre>
  `$ rails db:create` <br/>
- `$ rails db:migrate <br/>`
- `$ yarn install <br/>`
- `$ rails server <br/>`
+ `$ rails db:migrate` <br/>
+ `$ yarn install` <br/>
+ `$ rails server` <br/>
 
