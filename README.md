@@ -12,14 +12,14 @@ This is a sample rails 6 application that provide Authentication, Roles and Auto
  **Javascript**: JQuery <br/>  
 
 
- **PLATFORMS**<br/>  
+ **PLATFORMS**<br/>
   ruby<br/> 
 
  **DEPENDENCIES** <br/> 
   bootsnap (>= 1.4.2)<br/>
   byebug<br/>
   capybara (>= 2.15)<br/>
-  devise (~> 4.7, >= 4.7.2)<br/>
+  devise (4.7)<br/>
   excon <br/>  
   font_awesome5_rails < br />
   globalize!  < br />
@@ -28,20 +28,13 @@ This is a sample rails 6 application that provide Authentication, Roles and Auto
   jquery-validation-rails (~> 1.19) <br/>  
   listen (>= 3.0.5, < 3.2)<br/>  
   pg (>= 0.18, < 2.0) <br/>  
-  puma (~> 4.1). 
-  pundit (~> 2.1). 
-  rails (~> 6.0.2, >= 6.0.2.2). 
-  rails-i18n. 
-  rolify (~> 5.3). 
-  sass-rails (>= 6). 
-  selenium-webdriver. 
-  spring. 
-  spring-watcher-listen (~> 2.0.0). 
-  turbolinks (~> 5). 
-  tzinfo-data. 
-  web-console (>= 3.3.0). 
-  webdrivers. 
-  webpacker (~> 4.0). 
+  puma (~> 4.1)<br/>
+  pundit (~> 2.1)<br/>
+  rails (~> 6.0.2, >= 6.0.2.2)<br/>
+  rails-i18n<br/>
+  rolify (~> 5.3)<br/>
+  selenium-webdriver<br/>
+  webpacker<br/>
 
 **RUBY VERSION** <br/>  
    ruby 2.6.5 <br/>  
@@ -49,12 +42,12 @@ This is a sample rails 6 application that provide Authentication, Roles and Auto
  **Database creation** <br/>  
   Create a local o e remote postgresql server <br/>  
   
- **Clone** <br/>  
+ **Clone** <br/>
 $ git clone https://github.com/wilfriedndomokenfack/users-posts-rails-6.git <br/>  
-$ cd users-posts-rails-6/ <br/>  
-$ bundle install <br/>  
+$ cd users-posts-rails-6/ <br/>
+$ bundle install <br/>
 
-edit the file app/config/database.yml <br/>
+edit the file app/config/database.yml<br/>
 development:  <br/> 
   <<: *default <br/>  
   database: all_development  <br/>  
