@@ -1,7 +1,11 @@
 **Rails 6, internationalisation (EN, FR), Action-text, Bootstrap4, JQuery, Devise, Rolify and Pundit** <br/> 
 
 This is a sample rails 6 application that provide Authentication, Roles and Autorisation to posts and comments flow.  <br/> 
-
+<ul>
+  <li>[Devise](https://github.com/heartcombo/devise) for authentication</li>
+  <li>[Rolify](https://www.rubydoc.info/gems/rolify/5.3.0) for roles</li>
+  <li>[Pundit](https://www.rubydoc.info/gems/pundit/2.1.0) for authosisation</li>
+</ul>
 . [Devise](https://github.com/heartcombo/devise) for authentication <br/> 
 . [Rolify](https://www.rubydoc.info/gems/rolify/5.3.0) for roles <br/> 
 . [Pundit](https://www.rubydoc.info/gems/pundit/2.1.0) for authosisation <br/> 
