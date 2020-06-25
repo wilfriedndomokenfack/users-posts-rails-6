@@ -12,14 +12,14 @@ This is a sample rails 6 application that provide Authentication, Roles and Auto
  **Javascript**: JQuery <br/>  
 
 
- **PLATFORMS** <br/>  
-  ruby.  
+ **PLATFORMS**<br/>  
+  ruby<br/> 
 
- .**DEPENDENCIES** <br/> 
-  bootsnap (>= 1.4.2) <br/>  
-  byebug <br/>  
-  capybara (>= 2.15) <br/>  
-  devise (~> 4.7, >= 4.7.2) <br/>  
+ **DEPENDENCIES** <br/> 
+  bootsnap (>= 1.4.2)<br/>
+  byebug<br/>
+  capybara (>= 2.15)<br/>
+  devise (~> 4.7, >= 4.7.2)<br/>
   excon <br/>  
   font_awesome5_rails < br />
   globalize!  < br />
@@ -54,17 +54,17 @@ $ git clone https://github.com/wilfriedndomokenfack/users-posts-rails-6.git <br/
 $ cd users-posts-rails-6/ <br/>  
 $ bundle install <br/>  
 
-edit the file app/config/database.yml <br/>  
+edit the file app/config/database.yml <br/>
 development:  <br/> 
   <<: *default <br/>  
   database: all_development  <br/>  
 
-  username: your postgres username <br/>  
-  password: your postgres password <br/>  
+  username: your postgres username <br/>
+  password: your postgres password <br/>
   port: 5432 <br/>  
  
- $ rails db:create <br/>  
- $ rails db:migrate <br/>  
- $ yarn install <br/>  
- $ rails server <br/>  
+ $ rails db:create <br/>
+ $ rails db:migrate <br/>
+ $ yarn install <br/>
+ $ rails server <br/>
 
