@@ -1,10 +1,10 @@
-# Rails 6, internationalisation (EN, FR), Action-text, Bootstrap4, JQuery, Devise, Rolify and Pundit. 
+**Rails 6, internationalisation (EN, FR), Action-text, Bootstrap4, JQuery, Devise, Rolify and Pundit** <br/> 
 
 This is a sample rails 6 application that provide Authentication, Roles and Autorisation to posts and comments flow.  
 
-. Devise for authentication. 
-. Rolify for roles. 
-. Pundit for authosisation. 
+. Devise for authentication. <br/> 
+. Rolify for roles. <br/> 
+. Pundit for authosisation. <br/> 
 
 
  **Database**: PostgreSQL. 
