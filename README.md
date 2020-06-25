@@ -41,15 +41,16 @@ $ cd users-posts-rails-6/<br/>
 $ bundle install<br/>
 
 edit the file app/config/database.yml<br/>
-`development:  <br/> 
-  &nbsp;<<: *default <br/>  
-  &nbsp;database: all_development  <br/>  
+<pre>
+development:  <br/> 
+  <<: *default <br/>  
+  database: all_development  <br/>  
 
-  &nbsp;username: your postgres username <br/>
-  &nbsp;password: your postgres password <br/>
-  &nbsp;port: 5432 <br/>`
-  
- $ rails db:create <br/>
+  username: your postgres username <br/>
+  password: your postgres password <br/>
+  port: 5432 <br/>
+</pre>
+ `$ rails db:create` <br/>
  $ rails db:migrate <br/>
  $ yarn install <br/>
  $ rails server <br/>
