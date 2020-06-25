@@ -26,7 +26,7 @@ This is a sample rails 6 application that provide Authentication, Roles and Auto
   pundit<br/>
   rails<br/>
   rails-i18n<br/>
-  rolify (~> 5.3)<br/>
+  rolify<br/>
   webpacker<br/>
 
 **RUBY VERSION** <br/>
@@ -42,13 +42,13 @@ $ bundle install<br/>
 
 edit the file app/config/database.yml<br/>
 `development:  <br/> 
-  <<: *default <br/>  
-  database: all_development  <br/>  
+  &nbsp;<<: *default <br/>  
+  &nbsp;database: all_development  <br/>  
 
-  username: your postgres username <br/>
-  password: your postgres password <br/>
-  port: 5432 <br/>  
- `
+  &nbsp;username: your postgres username <br/>
+  &nbsp;password: your postgres password <br/>
+  &nbsp;port: 5432 <br/>`
+  
  $ rails db:create <br/>
  $ rails db:migrate <br/>
  $ yarn install <br/>
