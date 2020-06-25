@@ -1,0 +1,32 @@
+fr:
+  global:
+    fr-color: "blue"
+    en-color: "black"
+    menu:
+      search: "Chercher..."
+      welcome: "Bienvenue"
+
+  resources:
+    new: "Nouveau"
+    show: "Voir"
+    edit: "Modifier"
+    destroy: "Suprimer"
+
+    user:
+      model: "User"
+      models: "Users"
+      attrubuts:
+        Name: "Nom"
+        email: "Email"
+        passord: "Password"
+      actions:
+        login: "Connection"
+        logout: "Deconnection"
+        signup: "S'enregistrer"
+        forgot_password: "Password oublié?"
+    post:
+      model: "Post"
+      models: "Posts"
+      attributs:
+        title: "Titre"
+        content: "Contenu"

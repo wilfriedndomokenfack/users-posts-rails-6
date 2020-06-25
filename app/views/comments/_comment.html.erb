@@ -1,0 +1,27 @@
+
+<div class="card bg-light text-dark">
+  <div class="card-body">
+
+    <p><%= comment.body %></p>
+    <em class="float-left" >
+      <small>Commented <%= time_ago_in_words(@post.created_at) %> ago
+        by <%= link_to comment.user.name, comment.user %>
+      </small>
+    </em>
+    <p>
+    <div class="btn-group float-right">
+      <% if current_user %>
+        <% if current_user.id == comment.user.id %>
+          <%= link_to t('resources.destroy'), [comment.post, comment],
+                      method: :delete,
+                      data: { confirm: 'Are you sure?' },
+                      :class => "btn btn-sm btn-outline-secondary" %>
+
+        <% end %>
+      <% end %>
+    </div>
+
+    </p>
+  </div>
+</div>
+<br>

@@ -1,0 +1,55 @@
+
+<%= render 'layouts/partials/notice' %>
+
+<h1><%= t("resources.post.models") %></h1>
+
+<main role="main" class="container">
+
+  <div class="input-group mb-3">
+    <input id="myInput" type="text" class="form-control" placeholder="<%= t('global.menu.search')%>" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <button type="button" class="btn btn-secondary " id="createnewpost"><%= t('resources.new') %> <%= t('resources.post.model') %></button>
+    <br>
+  </div>
+
+  <div id="newpost">
+    <h1><%= t('resources.new') %> <%= t('resources.post.model') %></h1>
+    <%= render 'form', post: @post %>
+  </div>
+
+  <div class="row" id="myTable">
+    <% @posts.each do |post| %>
+      <div class="col-md-4" >
+        <div class="card mb-4 shadow-sm ">
+          <div class="card-header" >
+            <h4><%= post.title.capitalize %></h4>
+          </div>
+          <div class="card-body">
+            <p class="card-text"><%= post.content %></p>
+          </div>
+
+          <div class="card-footer">
+           <em class="float-left" >
+             <small>Posted <%= time_ago_in_words(post.created_at) %> ago
+              by <%= link_to post.user.name, post.user %>
+             </small>
+           </em>
+
+
+            <div class="btn-group float-right">
+              <%= link_to t('resources.show'), post, :class => "btn btn-sm btn-outline-secondary", :id =>"showpost" %>
+              <% if current_user %>
+                <% if policy(post).update? %>
+                  <%= link_to t('resources.edit'), edit_post_path(post), :class => "btn btn-sm btn-outline-secondary" %>
+                <% end %>
+                <% if policy(post).destroy? %>
+                  <%= link_to t('resources.destroy'), post, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-sm btn-outline-secondary" %>
+                <% end %>
+              <% end %>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</main>
