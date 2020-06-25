@@ -2,9 +2,9 @@
 
 This is a sample rails 6 application that provide Authentication, Roles and Autorisation to posts and comments flow.  <br/> 
 
-. Devise for authentication <br/> 
-. Rolify for roles <br/> 
-. Pundit for authosisation <br/> 
+. [Devise](https://github.com/heartcombo/devise) for authentication <br/> 
+. [Rolify](https://www.rubydoc.info/gems/rolify/5.3.0) for roles <br/> 
+. [Pundit](https://www.rubydoc.info/gems/pundit/2.1.0) for authosisation <br/> 
 
 [DEMO](https://users-posts.herokuapp.com/)
 
