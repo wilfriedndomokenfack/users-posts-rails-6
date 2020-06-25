@@ -29,11 +29,11 @@ This is a sample rails 6 application that provide Authentication, Roles and Auto
   rolify (~> 5.3)<br/>
   webpacker<br/>
 
-**RUBY VERSION** <br/>  
-   ruby 2.6.5 <br/>  
+**RUBY VERSION** <br/>
+   ruby 2.6.5 <br/>
 
- **Database creation** <br/>  
-  Create a local o e remote postgresql server <br/>  
+ **Database creation** <br/>
+  Create a local o e remote postgresql server <br/>
   
  **Clone** <br/>
 $ git clone https://github.com/wilfriedndomokenfack/users-posts-rails-6.git<br/>
@@ -41,14 +41,14 @@ $ cd users-posts-rails-6/<br/>
 $ bundle install<br/>
 
 edit the file app/config/database.yml<br/>
-development:  <br/> 
+`development:  <br/> 
   <<: *default <br/>  
   database: all_development  <br/>  
 
   username: your postgres username <br/>
   password: your postgres password <br/>
   port: 5432 <br/>  
- 
+ `
  $ rails db:create <br/>
  $ rails db:migrate <br/>
  $ yarn install <br/>
