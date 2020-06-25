@@ -21,8 +21,8 @@ This is a sample rails 6 application that provide Authentication, Roles and Auto
   capybara (>= 2.15). 
   devise (~> 4.7, >= 4.7.2). 
   excon. 
-  font_awesome5_rails. 
-  globalize!  
+  font_awesome5_rails < br />
+  globalize!  < br />
   image_processing (~> 1.2). 
   jbuilder (~> 2.7). 
   jquery-validation-rails (~> 1.19). 
