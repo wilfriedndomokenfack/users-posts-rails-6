@@ -71,7 +71,7 @@ fr:
       passord: "Password"
     actions:
       login: "Connection"
-      logout: "Deconnection"
+      logout: "Déconnection"
       signup: "S'enregistrer"
       forgot_password: "Password oublié?"
       remember_me: "Souviens-toi de moi"

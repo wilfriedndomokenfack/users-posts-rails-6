@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   rolify
-
+  resourcify
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
   # Include default devise modules. Others available are:

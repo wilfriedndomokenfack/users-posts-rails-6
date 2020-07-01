@@ -21,8 +21,16 @@
         <td><%= user.name %></td>
         <td><%= user.email %></td>
         <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if policy(user).update? %>
+          <td> <%= link_to 'Edit', edit_user_registration_path %></td>
+        <% else %>
+          <td></td>
+        <% end %>
+        <% if policy(user).destroy? %>
+          <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% else %>
+          <td></td>
+        <% end %>
         <td>
           <div class="btn-group">
             <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
